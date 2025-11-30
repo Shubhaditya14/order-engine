@@ -309,7 +309,4 @@ MIT
 
 Built with modern C++20, WebSocket++, nlohmann/json, React, and Vite.
 
----
 
-**Author**: Antigravity (Google Deepmind)  
-**Date**: 2025-11-30
