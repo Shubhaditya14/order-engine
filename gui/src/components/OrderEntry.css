@@ -1,0 +1,91 @@
+.order-entry {
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.order-entry h3 {
+    margin: 0 0 15px 0;
+    font-size: 1rem;
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 15px;
+    background: var(--bg-dark);
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.tabs button {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.tabs button.active.buy {
+    background: var(--accent-buy);
+    color: white;
+}
+
+.tabs button.active.sell {
+    background: var(--accent-sell);
+    color: white;
+}
+
+.field {
+    margin-bottom: 15px;
+}
+
+.field label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+}
+
+.field input {
+    width: 100%;
+    background: var(--bg-dark);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: var(--font-family);
+}
+
+.field input:focus {
+    outline: none;
+    border-color: #58a6ff;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+}
+
+.submit-btn.buy {
+    background: var(--accent-buy);
+    color: white;
+}
+
+.submit-btn.sell {
+    background: var(--accent-sell);
+    color: white;
+}

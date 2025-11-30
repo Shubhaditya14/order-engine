@@ -1,0 +1,101 @@
+.order-book {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.order-book h3 {
+    padding: 10px 15px;
+    margin: 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-panel);
+}
+
+.book-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 8px 15px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border);
+}
+
+.book-header span:last-child {
+    text-align: right;
+}
+
+.asks,
+.bids {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.asks {
+    flex-direction: column-reverse;
+    /* Lowest ask at bottom */
+    border-bottom: 1px solid var(--border);
+}
+
+.level {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 4px 15px;
+    font-size: 0.85rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.level:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.level .bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.ask .bar {
+    background: var(--accent-sell);
+}
+
+.bid .bar {
+    background: var(--accent-buy);
+}
+
+.level span {
+    z-index: 1;
+}
+
+.level .price {
+    font-weight: bold;
+}
+
+.ask .price {
+    color: var(--accent-sell);
+}
+
+.bid .price {
+    color: var(--accent-buy);
+}
+
+.level .total {
+    text-align: right;
+    color: var(--text-secondary);
+}
+
+.spread {
+    text-align: center;
+    padding: 8px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom: 1px solid var(--border);
+}

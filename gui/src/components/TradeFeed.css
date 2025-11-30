@@ -1,0 +1,44 @@
+.trade-feed {
+    background: var(--bg-panel);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.trade-feed h3 {
+    padding: 15px;
+    margin: 0;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.trade-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.trade-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    font-size: 0.85rem;
+    font-family: 'Roboto Mono', monospace;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.trade-item .price {
+    color: var(--text-primary);
+}
+
+.trade-item .qty {
+    color: var(--text-secondary);
+}
+
+.trade-item .time {
+    color: var(--text-secondary);
+    font-size: 0.75rem;
+}
