@@ -308,9 +308,3 @@ MIT
 ## 🙏 Acknowledgments
 
 Built with modern C++20, WebSocket++, nlohmann/json, React, and Vite.
-
-
-<<<<<<< HEAD
-**Built with modern C++20, WebSocket++, nlohmann/json, React, and Vite.**
-=======
->>>>>>> 5402f17224fa30a3f3b5f767a88b3b2173f4e5ed
