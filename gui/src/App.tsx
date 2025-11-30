@@ -72,7 +72,7 @@ function App() {
   };
 
   const cancelOrder = (orderId: number) => {
-      if (ws.current && ws.current.readyState === WebSocket.OPEN) {
+    if (ws.current && ws.current.readyState === WebSocket.OPEN) {
       ws.current.send(JSON.stringify({
         type: 'cancel',
         orderId
@@ -83,12 +83,12 @@ function App() {
   return (
     <div className="app-container">
       <header>
-        <h1>ANTIGRAVITY <span>OME</span></h1>
+        <h1>ORDER MATCHING <span>ENGINE</span></h1>
         <div className={`status ${connected ? 'online' : 'offline'}`}>
           {connected ? 'SYSTEM ONLINE' : 'DISCONNECTED'}
         </div>
       </header>
-      
+
       <main>
         <div className="left-panel">
           <OrderEntry onSendOrder={sendOrder} />

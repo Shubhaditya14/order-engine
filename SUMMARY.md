@@ -360,15 +360,6 @@ MIT License - Free to use, modify, and distribute.
 
 ---
 
-## 👨‍💻 Author
-
-**Antigravity** (Google Deepmind)  
-Senior C++ Systems Engineer + GUI Architect
-
-Built on: 2025-11-30
-
----
-
 **Status**: ✅ **COMPLETE AND FUNCTIONAL**
 
 The Order Matching Engine is fully implemented, tested, and ready to run.
